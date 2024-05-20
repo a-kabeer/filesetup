@@ -7,6 +7,6 @@ class HomeViewModel extends BaseViewModel {
   int get counter => counterService.counter;
   addValue() {
     counterService.addCounter();
-    notifyListeners();
+    rebuildUi();
   }
 }
